@@ -1,0 +1,212 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.4.12462/W32 for ARM       20/Mar/2018  14:44:04
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  C:\Users\Paul\Desktop\simulation\CRC_ALGO\main.c
+#    Command line =  
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\main.c -D
+#        USE_STDPERIPH_DRIVER -D VECT_TAB_FLASH -D USE_STM32F4_EVB -D STM32F4XX
+#        -D STM32F401X -D AKM_MAGNETOMETER_AK09911 -D AKSC_VERSION_DEVICE=9911
+#        -D AKL_SKIP_HW_CHECK -D DEBUG -D AKM_DISABLE_DOEPLUS -D
+#        AKM_CUSTOM_CONTINUOUS_MEASURE -D __DOEAG_MODE_EN -D ACC_SENSOR_DISABLE
+#        -D AKM_ACCELEROMETER_DUMMY -D AKM_ENABLE_PDC -lC
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\STM32F4\List -lA
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\STM32F4\List
+#        --diag_suppress Pa082,pe191 -o
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\STM32F4\Obj --no_cse
+#        --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering
+#        --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e
+#        --fpu=VFPv4_sp --dlib_config "C:\Program Files (x86)\IAR
+#        Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\Libraries\STM32_Common\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\Libraries\STM32F4xx_HAL_Driver\inc\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\Libraries\CMSIS\Device\STM32F4xx\Include\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\..\FreeRTOS\FreeRTOS821\Source\include\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\..\FreeRTOS\FreeRTOS821\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\Libraries\STM32_CPAL_Driver\inc\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\Libraries\STM32_CPAL_Driver\devices\stm32f4xx\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\..\System\Algorithm\inc\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\..\System\Driver\inc\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\..\System\DriverLibrary\AKM8963\inc\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\..\System\DriverLibrary\AKM09911\inc\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\..\System\DriverLibrary\AKM09911AG\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\..\System\DriverLibrary\AKM09911AG\AKM_HAL\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\..\System\DriverLibrary\AKM09911AG\AKM_Library\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\..\System\DriverLibrary\AKM09911AG\AKM_Library\libag\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\..\System\DriverLibrary\AKM09911AG\AKM_Library\libSmartCompass\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\..\System\DriverLibrary\AKM09911AG\AKM_Sensors\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\..\System\DriverLibrary\MMC3524xPJ\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\..\System\DriverLibrary\ST480M\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\..\System\DriverLibrary\Yamaha\inc\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\..\System\DriverLibrary\YamahaMini\inc\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\..\System\Manager\inc\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\..\System\Utils\inc\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\Release\Driver\inc\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\Release\Manager\inc\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\Release\Platform\inc\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\Release\RtosTask\inc\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\Release\System\inc\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\Release\SystemConfig\inc\
+#        -I
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\..\..\Source\inc\
+#        -I C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\..\..\..\ -I
+#        C:\work\Develop\Source\Manager\ -I C:\work\Develop\Source\Common\ -I
+#        C:\work\Develop\Source\Platform_Dependent\ -I
+#        C:\work\Develop\Source\Android\ -I C:\work\Develop\Source\TimeSync\ -I
+#        C:\work\Develop\Source\Protocol\ -Ol --vla --use_c++_inline -I
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\" -D ARM_MATH_CM4
+#    Locale       =  Chinese (Traditional)_Taiwan.950
+#    List file    =  
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\STM32F4\List\main.lst
+#    Object file  =  
+#        C:\Users\Paul\Desktop\simulation\CRC_ALGO\EWARM6\STM32F4\Obj\main.o
+#
+###############################################################################
+
+C:\Users\Paul\Desktop\simulation\CRC_ALGO\main.c
+      1          #include <stdio.h>
+      2          #include <stdlib.h>
+      3          #include <stdint.h>
+      4          #include <stdbool.h>
+      5          #include <stddef.h>
+      6          #include <string.h>
+      7          
+      8          #include "main.h"
+      9          #include "CRC.h"
+     10          
+
+   \                                 In section .data, align 4
+     11          static uint8_t test[] = "123456789";
+   \                     test:
+   \   00000000   0x31 0x32          DC8 "123456789"
+   \              0x33 0x34    
+   \              0x35 0x36    
+   \              0x37 0x38    
+   \              0x39 0x00    
+   \   0000000A   0x00 0x00          DC8 0, 0
+     12          
+     13          uint32_t CRC16_CCITT_LOW_SPEED(uint8_t *ptr, uint8_t len);
+     14          uint32_t CRC16_CCITT_MIDDLE_SPEED(uint8_t *ptr, int len);
+     15          uint32_t CRC16_CCITT_HIGH_SPEED(uint8_t *ptr, uint8_t len);
+     16          
+
+   \                                 In section .text, align 4, keep-with-next
+     17           int main( void )
+     18          {
+   \                     main: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+     19              uint32_t CRC0 = 0;
+   \   00000002   0x2400             MOVS     R4,#+0
+     20              uint32_t CRC1 = 0;
+   \   00000004   0x2500             MOVS     R5,#+0
+     21              uint32_t CRC2 = 0;
+   \   00000006   0x2000             MOVS     R0,#+0
+     22              CRC0 = CRC16_CCITT_LOW_SPEED(test, 9);
+   \   00000008   0x2109             MOVS     R1,#+9
+   \   0000000A   0x480A             LDR.N    R0,??main_0
+   \   0000000C   0x.... 0x....      BL       CRC16_CCITT_LOW_SPEED
+   \   00000010   0x0004             MOVS     R4,R0
+     23              CRC1 = CRC16_CCITT_MIDDLE_SPEED(test, 9);
+   \   00000012   0x2109             MOVS     R1,#+9
+   \   00000014   0x4807             LDR.N    R0,??main_0
+   \   00000016   0x.... 0x....      BL       CRC16_CCITT_MIDDLE_SPEED
+   \   0000001A   0x0005             MOVS     R5,R0
+     24              CRC2 = CRC16_CCITT_HIGH_SPEED(test, 9);
+   \   0000001C   0x2109             MOVS     R1,#+9
+   \   0000001E   0x4805             LDR.N    R0,??main_0
+   \   00000020   0x.... 0x....      BL       CRC16_CCITT_HIGH_SPEED
+     25              printf("CRC:%X,%X,%X\n",CRC0,CRC1,CRC2);
+   \   00000024   0x0003             MOVS     R3,R0
+   \   00000026   0x002A             MOVS     R2,R5
+   \   00000028   0x0021             MOVS     R1,R4
+   \   0000002A   0x4803             LDR.N    R0,??main_0+0x4
+   \   0000002C   0x.... 0x....      BL       printf
+     26              while(1)
+   \                     ??main_1: (+1)
+   \   00000030   0xE7FE             B.N      ??main_1
+   \   00000032   0xBF00             Nop      
+   \                     ??main_0:
+   \   00000034   0x........         DC32     test
+   \   00000038   0x........         DC32     ?_0
+     27              {
+     28              }
+     29          }
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \   00000000   0x43 0x52          DC8 "CRC:%X,%X,%X\012"
+   \              0x43 0x3A    
+   \              0x25 0x58    
+   \              0x2C 0x25    
+   \              0x58 0x2C    
+   \              0x25 0x58    
+   \              0x0A 0x00    
+   \   0000000E   0x00 0x00          DC8 0, 0
+     30          
+     31          
+     32          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   main
+        16   -> CRC16_CCITT_HIGH_SPEED
+        16   -> CRC16_CCITT_LOW_SPEED
+        16   -> CRC16_CCITT_MIDDLE_SPEED
+        16   -> printf
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      16  ?_0
+      60  main
+      12  test
+
+ 
+ 12 bytes in section .data
+ 16 bytes in section .rodata
+ 60 bytes in section .text
+ 
+ 60 bytes of CODE  memory
+ 16 bytes of CONST memory
+ 12 bytes of DATA  memory
+
+Errors: none
+Warnings: none
